@@ -4,6 +4,9 @@ export const usePostStore = defineStore('post', {
   state: () => ({
     posts: JSON.parse(localStorage.getItem('posts')) || [],
   }),
+  getters: {
+    allPosts: (state) => state.posts,
+  },
   actions: {
     addPost(post) {
       post.id = Date.now().toString();
