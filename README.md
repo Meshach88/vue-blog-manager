@@ -32,7 +32,7 @@ A simple yet elegant blog manager built with **Vue 3**, **Pinia**, **Vue Router*
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/yourusername/vue-blog-manager.git
+git clone https://github.com/Meshach88/vue-blog-manager.git
 cd vue-blog-manager
 npm install
 
