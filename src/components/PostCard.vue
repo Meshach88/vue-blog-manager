@@ -7,12 +7,13 @@
             <router-link :to="`/post/${post.id}`" class="hover:underline">Read More</router-link>
             <router-link :to="`/edit/${post.id}`" class="hover:underline">Edit</router-link>
         </div>
+
         <button @click="$emit('delete', post.id)" class="text-red-500 hover:underline self-end mt-2">Delete</button>
     </div>
 </template>
 
 <script setup>
-defineProps(['post']);
+defineProps({ post: Object });
 defineEmits(['delete']);
 </script>
 
